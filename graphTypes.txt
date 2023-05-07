@@ -1,0 +1,18 @@
+type Query{
+    test:String
+}
+
+type Student{
+    name:String,
+    city:String,
+    phone:Int
+}
+
+input MyInput{
+    name:String,
+    city:String
+}
+
+type Mutation{
+    submit(myInput:MyInput):Student
+}
